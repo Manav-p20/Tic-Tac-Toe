@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and link to the CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <!-- Main container for the Tic-Tac-Toe game -->
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1> <!-- Game title -->
+
+        <!-- Status display to show whose turn it is -->
+        <div id="status">Player X's turn</div>
+
+        <!-- Game board container with 9 cells -->
+        <div class="board" id="board">
+            <!-- Each cell represents a position on the board -->
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <!-- Button to restart the game -->
+        <button id="resetButton">Restart Game</button>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

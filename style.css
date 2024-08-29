@@ -1,0 +1,81 @@
+/* Apply universal box-sizing, margin, and padding reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a flexbox layout, centering the content */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #6499e8; /* Light blue background color */
+}
+
+/* Container styling to center the content and align text */
+.container {
+    text-align: center;
+}
+
+/* Style for the game title */
+h1 {
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Style for the status display (e.g., showing current player's turn) */
+#status {
+    margin-bottom: 20px; /* Spacing below the status */
+    font-size: 1.5rem; /* Larger font size */
+    color: #070707; /* Dark color for text */
+}
+
+/* Grid layout for the game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns of 100px each */
+    grid-template-rows: repeat(3, 100px); /* 3 rows of 100px each */
+    gap: 5px; /* Space between the cells */
+    margin-bottom: 20px; /* Spacing below the board */
+}
+
+/* Style for individual cells on the game board */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #9c81c7; /* Light purple background color */
+    border: 2px solid #060606; /* Dark border around cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Large font size for X/O symbols */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Change background color when hovering over a cell */
+.cell:hover {
+    background-color: #c2bbc6; /* Lighter purple on hover */
+}
+
+/* Style for the restart button */
+button {
+    padding: 10px 20px; /* Padding around the button */
+    font-size: 1rem; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 80px); /* Reduce cell size  */
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem; /* Reduce font size for symbols */
+    }
+}
